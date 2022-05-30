@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  font-size: 14px;
+}
+
+// prime vue context-menu
+.p-contextmenu {
+  width: fit-content !important;
+  min-width: 12.5rem !important;
+}
+
+// antd-加载遮罩
+.ant-spin-container {
+  width: 100%;
+  height: 100%;
+}
+
+// antd-通知
+.ant-notification, .ant-message {
+  z-index: 3000;
+}
+
+// primevue tooltip
+.p-tooltip {
+  color: red;
+}
+
+// primevue panel content部分高度填满
+.p-panel {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  overflow-y: auto;
+
+  .p-toggleable-content {
+    overflow-y: auto;
+    flex: 1;
+
+    .p-panel-content {
+      //overflow-y: auto;
+      height: 100%;
+    }
+  }
+
+  .p-panel-header {
+    justify-content: space-between;
+  }
+}
